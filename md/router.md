@@ -7,7 +7,10 @@ import React, { Component } from 'react';
 import './App.css';
 
 // 要提前安装react-router-dom 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+//HashRouter 就是hash路由 带#号的 如http://localhost:3000/#/
+import { HashRouter  as Router, Route, Link } from "react-router-dom";
+//BrowserRouter 就是浏览器路由 利用H5特性 不兼容
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 //引入组件
 import Xheader from './page/Xheader.jsx'
@@ -49,7 +52,7 @@ export default App;
 import React, { Component } from 'react';
 import './App.css';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Route, Link } from "react-router-dom";
 
 
 import Xheader from './page/Xheader.jsx'
