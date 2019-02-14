@@ -1,6 +1,6 @@
-#简单配置Redux.md
+# 简单配置Redux.md
 
-###App.js
+### App.js
 
 ```js
 import React, { Component } from 'react';
