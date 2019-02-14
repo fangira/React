@@ -39,3 +39,80 @@ export default App;
 
 
 ```
+<hr/>
+
+# 动态路由例子
+
+### App.js
+
+```js
+import React, { Component } from 'react';
+import './App.css';
+
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+
+import Xheader from './page/Xheader.jsx'
+import Xlist from './page/Xlist.jsx'
+
+class App extends Component {
+  state={
+    num:10
+  }
+  render() {
+    return (
+      <Router>
+      <div>
+        <ul>
+          <li><Link to="/">Xheader</Link></li>
+          //跳转时传参
+          <li><Link to={`/about/${this.state.num}`}>Xlist</Link></li>
+        </ul>
+  
+        <hr/>
+  
+        <Route exact path="/" component={Xheader}/>
+        //设置   ：动态变量
+        <Route path="/about/:idx" component={Xlist}/>
+      </div>
+    </Router>
+    );
+  }
+}
+
+export default App;
+
+```
+
+### Xlist.jsx
+
+```jsx
+import React from 'react'
+import { Route, Link } from "react-router-dom";
+
+import Xa from './Xlist/Xa.jsx';
+import Xb from './Xlist/Xb.jsx';
+
+class Xlist extends React.Component {
+ 
+    render() {
+        return (
+            <div>
+                <h2>Xlist</h2>
+                //通过 this.props.match.params 获取路由上的参数
+                <h3>动态路由idx的值为{ this.props.match.params.idx}</h3>
+                <ul>
+                    <li><Link to="/about/a">Xa</Link></li>
+                    <li><Link to="/about/b">Xb</Link></li>
+
+                </ul>
+                <Route exact path="/about/a" component={Xa} />
+                <Route exact path="/about/b" component={Xb} />
+            </div>
+        )
+    }
+}
+
+export default Xlist;
+
+```
