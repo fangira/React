@@ -2,7 +2,12 @@
 [官网](https://dvajs.com/)
 
 ### 全局安装
-`npm install dva-cli -g`
+`$ npm install dva-cli -g`
 
 ### 建立脚手架
-`dva new projectName（项目名）`
+`$ dva new projectName（项目名）`
+
+### 使用 antd
+通过 npm 安装 antd 和 babel-plugin-import 。babel-plugin-import 是用来按需加载 antd 的脚本和样式的
+
+`$ npm install antd babel-plugin-import --save`
