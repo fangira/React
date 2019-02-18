@@ -7,7 +7,8 @@
 ### 建立脚手架
 `$ dva new projectName（项目名）`
 
-### 使用 antd
+### 安装 antd（按需加载）
 通过 npm 安装 antd 和 babel-plugin-import 。babel-plugin-import 是用来按需加载 antd 的脚本和样式的
 
+`$ cd projectName`
 `$ npm install antd babel-plugin-import --save`
