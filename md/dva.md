@@ -12,3 +12,13 @@
 
 `$ cd projectName`
 `$ npm install antd babel-plugin-import --save`
+
+编辑 .webpackrc，使 babel-plugin-import 插件生效。
+
+```js
+{
++  "extraBabelPlugins": [
++    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
++  ]
+}
+```
