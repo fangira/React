@@ -22,3 +22,8 @@
 +  ]
 }
 ```
+
+### 使用Scss样式必须安装
+```
+$ npm install node-sass sass-loader --save
+```
