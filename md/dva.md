@@ -30,4 +30,7 @@ $ npm install node-sass sass-loader --save
 
 ### 去除css/scss后面的hash值
 编辑 .webpackrc
-`"disableCSSModules":true`
+
+```
+"disableCSSModules":true
+```
