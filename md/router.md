@@ -39,10 +39,7 @@ class App extends Component {
 }
 
 export default App;
-
-
 ```
-<hr/>
 
 # 动态路由例子
 
