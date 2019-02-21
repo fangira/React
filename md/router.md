@@ -117,3 +117,18 @@ export default Xlist;
 
 ```
 
+### 编程式导航例子
+
+```jsx
+···
+goTo(){
+        this.props.history.push({pathname:'/abc'})
+        
+        //通过replace方法跳转的 不会记录在history里面
+        this.props.history.replace({pathname:'/abc'})
+    }
+ ···
+export default withRouter(Xheader);
+
+```
+
