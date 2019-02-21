@@ -117,34 +117,3 @@ export default Xlist;
 
 ```
 
-### dva脚手架中的路由重定向
-
-```js
-import React from 'react'
-
-import { Route, Switch, Link, Redirect } from 'dva/router';
-
-import Introduce from './about/Introduce.jsx';
-import Borad from './about/Borad';
-
-class About extends React.Component {
-    render() {
-        return (
-            <div>
-                <Link to="/about/introduce">GO TO introduce</Link>
-                <br />
-                <Link to="/about/borad">GO TO borad</Link>
-                <Switch>
-                    {/*写在前面的路由 先判断。 如果为/about/*的路由地址 直接执行render的方法 重定向为XXX*/}
-                    <Route exact path="/about/" render={() =>
-                        <Redirect to='/about/introduce'></Redirect>}></Route>
-                    <Route path="/about/introduce" exact component={Introduce} />
-                    <Route path="/about/borad" exact component={Borad} />
-                </Switch>
-            </div>
-        )
-    }
-}
-
-export default About;
-```
