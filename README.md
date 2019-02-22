@@ -16,5 +16,5 @@
 - [我的简单配置Redux例子](./md/redux.md)
 ### UI推荐
 - [Ant Design 建议PC后台管理系统](http://design.alipay.com/)
-- [material](https://material-ui.com/)
+- [material_PC端](https://material-ui.com/)
 - [飞冰-阿里](https://alibaba.github.io/ice/)
