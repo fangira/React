@@ -1,7 +1,7 @@
 # React
 ### React基础
-- [基础-老谢](.md/React基础.md)
-- [生命周期-老谢](.md/React生命周期.md)
+- [基础-老谢](./md/React基础.md)
+- [生命周期-老谢](./md/React生命周期.md)
 - [axios](./md/axios.md)
 ### 脚手架
 - [create-react-app](./md/create-react-app.md)
