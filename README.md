@@ -1,4 +1,6 @@
 # React
+### 杂谈
+- [高阶组件](https://www.jianshu.com/p/85f165ca002c)
 ### React基础
 - [基础-老谢](./md/React基础.md)
 - [生命周期-老谢](./md/React生命周期.md)
