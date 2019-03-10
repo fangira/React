@@ -43,7 +43,9 @@ class App extends Component {
   }
   render() {
     return (
-    //要用Provider标签套着，把仓库设置store加载到其属性上
+    //要用Provider标签套着，把仓库设置store加载到其属性上，
+    原理：把仓库store放到父context（不懂可以回去看context的定义）,
+    利用react自带的context加上redux的reducer和state的设置组合成react-redux
       <Provider store={store}>
         <Router>
           <div>
@@ -89,6 +91,7 @@ class Xheader extends React.Component {
     }
 }
 //connect要传两个函数，1.返回仓库中的所有值或指定值。2.定义方法onIncreaseClick，触发dispatch仓库中的type:'increase'的case。
+//第一个函数映射state用于获取仓库的值。第二个函数映射dispatch用于修改仓库的值
 export default connect((state) => {
 return state
 }, (dispatch) => {
