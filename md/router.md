@@ -128,6 +128,7 @@ goTo(){
         this.props.history.replace({pathname:'/abc'})
     }
  ···
+//非路由组件就必须通过withRouter修饰后才能获取到history,location,match
 export default withRouter(Xheader);
 
 ```
