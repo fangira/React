@@ -1,6 +1,6 @@
 # 简单配置Redux.md
 
-### App.js
+### App.js(redux的设置)
 
 ```js
 import React, { Component } from 'react';
@@ -44,7 +44,7 @@ class App extends Component {
   render() {
     return (
     //要用Provider标签套着，把仓库设置store加载到其属性上，
-    原理：把仓库store放到父context（不懂可以回去看context的定义）,
+    原理：把仓库store放到父context（不懂可以回去看基础-老谢的context的定义）,
     利用react自带的context加上redux的reducer和state的设置组合成react-redux
       <Provider store={store}>
         <Router>
@@ -70,7 +70,7 @@ export default App;
 ```
 
 
-### Xheader.jsx
+### Xheader.jsx（子组件映射）
 
 ```jsx
 import React from 'react';
